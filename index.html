@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gabriel S. Gavanes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to My Personal Page</h1>
+    <img src="img.jpg" alt="Profile Picture" class="profile-pic" /> 
+    <p>Hi There!!</p>
+
+    <div class="buttons">
+      <button onclick="showSection('about')">About Me</button>
+      <button onclick="showSection('hobbies')">Hobbies</button>
+      <button onclick="showSection('singer')">Favorite Singer</button>
+      <button onclick="showSection('contact')">Contact</button>
+      <button onclick="showSection('music')">Music</button>
+    </div> 
+
+    <div id="about" class="section">
+      <h2>About Me</h2>
+      <p>I'm <strong>Gabriel Gavanes</strong>, an active and adventurous individual. I love both the physical and digital world. Online gaming challenges me, while fitness keeps me healthy and confident. Music is my everyday energy source.</p>
+    </div>
+
+    <div id="hobbies" class="section">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Exercise / Fitness</li>
+        <li>Playing Online Games</li>
+        <li>Listening to Music</li>
+      </ul>
+    </div>
+
+    <div id="singer" class="section">
+      <h2>Favorite Singer</h2>
+      <p>I love listening to <em>talented artists</em> who create meaningful music:</p>
+      <ul>
+        <li><strong>Arthur Nery</strong></li>
+        <li><strong>Wilbert Ross</strong></li>
+      </ul>
+    </div>
+
+    <div id="contact" class="section">
+      <h2>Contact Me</h2>
+      <p><strong>Email:</strong> <a href="mailto:gabrielgavanes02@gmail.com">gabrielgavanes02@gmail.com</a></p>
+      <p><em>Feel free to reach out!</em></p>
+    </div>
+    
+    <div id="music" class="section">
+      <h2>My Favorite Music</h2>
+      <ul>
+        <li><strong>Arthur Nery</strong> - <em>Di Nakakasawa</em></li>
+        <li><strong>Wilbert Ross</strong> - <em>Ginintuang Tanawin</em></li>
+      </ul>
+      
+      <audio controls>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <p style="text-align:center"><small><em>Click play to listen!</em></small></p>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      // Itago lahat ng sections
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => sec.style.display = 'none');
+      
+      // Ipakita ang piniling section
+      document.getElementById(id).style.display = 'block';
+    }
+
+    // Ipakita ang 'about' section pagka-load ng page
+    document.addEventListener('DOMContentLoaded', function() {
+      showSection('about');
+    });
+  </script>
+</body>
+</html>

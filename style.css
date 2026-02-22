@@ -1,0 +1,97 @@
+/* Custom Styles for Gab's Page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+.container {
+  background-color: white;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #d32f2f; /* Solid red border */
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* My Profile Picture */
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 10px; /* Square with rounded corners looks very clean */
+  border: 3px solid #d32f2f;
+  margin-bottom: 10px;
+}
+
+h1 {
+  color: #d32f2f;
+  margin-bottom: 5px;
+}
+
+/* My Navigation Buttons */
+.buttons {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #b71c1c; /* Darker red when hovering */
+}
+
+/* Content Sections */
+.section {
+  display: none;
+  text-align: left;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: #fffafa; /* Light red tint background */
+}
+
+h2 {
+  color: #d32f2f;
+  border-bottom: 2px solid #d32f2f;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #d32f2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Audio Player */
+audio {
+  width: 100%;
+  margin-top: 10px;
+}
